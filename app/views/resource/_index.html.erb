@@ -1,0 +1,29 @@
+<h1>Listing <%= resource_class.model_name.human.pluralize %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <% attributes.each do |attribute| %>
+        <th><%= resource_class.human_attribute_name(attribute) %></th>
+      <% end %>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% collection.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_resource_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to "New #{resource_class.model_name.human}", new_resource_path %>
