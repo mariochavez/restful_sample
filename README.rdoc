@@ -1,28 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample project to show how to use Restful gem https://github.com/mariochavez/restful 
+and to show also how to get the most from Rails Template Inheritance 
+https://github.com/mariochavez/restful/wiki/Rails-Template-Inheritance
 
-Things you may want to cover:
+To run this project you will need installed on your system:
+- Ruby 2.0
+- Ruby on Rails 4.0
+- Bundler
 
-* Ruby version
+=== Setup
+For simplicity this project uses SQLite 3 as database engine. To setup your 
+database execute:
 
-* System dependencies
+    $ rake db:setup
+    $ rails s
 
-* Configuration
+Point your browser to http://127.0.0.1:3000/documents
 
-* Database creation
+=== Inspect the code
+This project is very very simple, so the value comes on look at the code and
+see how things work
 
-* Database initialization
+=== Bugs and feedback
+Use issues at Github to report bugs or give feedback.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Copyright © 2013 Mario Alberto Chavez. This project uses MIT-LICENSE.
