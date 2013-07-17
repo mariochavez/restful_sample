@@ -32,7 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'restful_controller', require: 'restful', path: '../resourceful'
+gem 'restful_controller', require: 'restful'
 gem 'pretty_formatter'
 gem 'puma'
 gem 'rack-cache'

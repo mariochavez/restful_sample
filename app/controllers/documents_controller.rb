@@ -1,11 +1,11 @@
 class DocumentsController < ResourceController
   before_action :expire_cache, only: [:index, :show]
 
-  restful model: :document, strong_params: :document_params
+  restful model: :document
 
-  private
+  protected
   # Never trust parameters from the scary internet, only allow the white list through.
-  def document_params
+  def secure_params
     params.require(:document).permit(:name, :description)
   end
 
